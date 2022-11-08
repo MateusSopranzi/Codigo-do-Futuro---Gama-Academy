@@ -1,0 +1,40 @@
+nome = prompt("Digite o seu nome: ");
+valorDisponivel = Number(prompt("Digite o valor disponível para a viagem: "));
+viagemDesejada = prompt("Digite a viagem desejada: ");
+
+switch(viagemDesejada){
+case "Disney":
+	if(valorDisponivel < 15000){
+	valorFaltante = 15000 - valorDisponivel;
+	alert("Valor insulficiente, falta " + `${valorFaltante}`);
+	}else{
+	alert("Boa viagem, você pode viajar");
+	}
+	break;
+case "Madrid":
+	if(valorDisponivel < 12000){
+	valorFaltante = 12000 - valorDisponivel;
+	alert("Valor insulficiente, falta " + `${valorFaltante}`);
+	}else{
+	alert("Boa viagem, você pode viajar");
+	}
+	break;
+case "Maceio":
+	if(valorDisponivel < 8000){
+	valorFaltante = 15000 - valorDisponivel;
+	alert("Valor insulficiente, falta " + `${valorFaltante}`);
+	}else{
+	alert("Boa viagem, você pode viajar");
+	}
+	break;
+case "Ribeirao Preto":
+	if(valorDisponivel < 5000){
+	valorFaltante = 15000 - valorDisponivel;
+	alert("Valor insulficiente, falta " + `${valorFaltante}`);
+	}else{
+	alert("Boa viagem, você pode viajar");
+	}
+	break;	
+default:
+	alert("Destino incorreto ou indisponível");
+}
